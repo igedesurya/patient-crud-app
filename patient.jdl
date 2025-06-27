@@ -1,0 +1,15 @@
+entity Patient {
+  pid String required
+  firstName String required
+  lastName String required
+  dateOfBirth LocalDate required
+  gender String required
+  address String required
+  suburb String required
+  state String required
+  postcode String required
+  phoneNumber String required
+}
+
+paginate Patient with pagination
+search Patient with pid firstName lastName
